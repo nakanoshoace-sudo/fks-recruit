@@ -162,13 +162,13 @@
     // Unconditional fallback — ensure nothing stays hidden
     setTimeout(() => { allAnimUp.forEach(el => el.classList.add('visible')); }, 3000);
 
-    // Lazy images
-    document.querySelectorAll('img[loading="lazy"]:not(.img-loaded)').forEach(img => {
-      const markLoaded = () => img.classList.add('img-loaded');
-      if (img.complete && img.naturalWidth > 0) markLoaded();
-      else {
-        img.addEventListener('load', markLoaded, { once: true });
-        img.addEventListener('error', markLoaded, { once: true });
+    // Lazy images — force load after Swup transition
+    document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+      if (!img.complete || img.naturalWidth === 0) {
+        const src = img.src;
+        img.removeAttribute('loading');
+        img.src = '';
+        img.src = src;
       }
     });
 
