@@ -13,7 +13,7 @@
 
   // ── Config ──
   const BG_COLOR   = [1.0, 1.0, 1.0]; // #FFFFFF — pure white background
-  const FORE_COLOR = [0/255, 255/255, 127/255];   // #00FF7F (springgreen)
+  const FORE_COLOR = [59/255, 199/255, 129/255];   // #3BC781
 
   const ITEMS = [
     { x: 0.02, y: 0.083, size: 0.80, opacity: 1,   lensWeight: 1,    grad: 0 },  // A — main circle (giftee exact)
