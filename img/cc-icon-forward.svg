@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="#2A5C52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Person walking forward with direction arrows -->
+  <circle cx="100" cy="55" r="12"/>
+  <path d="M100 67 V120 M100 120 L85 155 M100 120 L115 155"/>
+  <path d="M100 80 L75 100 M100 80 L125 100"/>
+  <!-- Forward arrows -->
+  <path d="M140 70 L160 70 L155 65 M160 70 L155 75" stroke-width="1.2"/>
+  <path d="M145 85 L165 85 L160 80 M165 85 L160 90" stroke-width="1.2"/>
+  <path d="M140 100 L160 100 L155 95 M160 100 L155 105" stroke-width="1.2"/>
+  <!-- Compass/direction circle -->
+  <circle cx="100" cy="100" r="80" stroke-width="0.6" opacity="0.25"/>
+  <!-- Path dots -->
+  <circle cx="45" cy="140" r="3" fill="#2A5C52" opacity="0.3"/>
+  <circle cx="55" cy="130" r="2.5" fill="#2A5C52" opacity="0.4"/>
+  <circle cx="67" cy="122" r="2" fill="#2A5C52" opacity="0.5"/>
+</svg>

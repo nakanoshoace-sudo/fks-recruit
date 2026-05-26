@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja" class="js page--sub">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>職種紹介 | 伏見管理サービス株式会社</title>
+  <meta name="description" content="伏見管理サービスの募集職種一覧。フロント（管理担当）、工事・修繕担当、総務・管理部門の3つのポジションをご紹介します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-fixed"></div>
+  <header class="scroll-header" id="scrollHeader">
+    <div class="scroll-header__inner">
+      <a href="positions.html" class="hdr-btn hdr-btn--filled">
+        <span>募集職種</span>
+        <span class="hdr-btn__arrow">→</span>
+      </a>
+      <a href="newgrads.html" class="hdr-btn hdr-btn--outlined">
+        <span>新卒採用</span>
+        <span class="hdr-btn__arrow">→</span>
+      </a>
+      <button class="scroll-header__hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div id="swup" class="transition-main">
+
+  <!-- ===== GLOBAL NAV (sub-top-nav--about pattern) ===== -->
+  <div class="sub-top-nav sub-top-nav--about">
+    <div class="hero-left-col">
+      <a href="index.html" class="hero-logo">
+        <span class="hero-logo__main">伏見管理サービス</span>
+        <span class="hero-logo__sub">Careers</span>
+      </a>
+      <nav class="hero-sidenav">
+        <a href="about.html">会社について</a>
+        <a href="culture.html">カルチャー</a>
+        <a href="workstyle.html">働く環境</a>
+        <a href="jobs.html" class="active">職種紹介</a>
+        <a href="index.html#faq">よくあるご質問</a>
+      </nav>
+    </div>
+    <div class="hero-right-cta">
+      <a href="positions.html" class="hdr-btn hdr-btn--filled">
+        <span>募集職種</span>
+        <span class="hdr-btn__arrow">→</span>
+      </a>
+      <a href="newgrads.html" class="hdr-btn hdr-btn--outlined">
+        <span>新卒採用</span>
+        <span class="hdr-btn__arrow">→</span>
+      </a>
+    </div>
+    <!-- H1 + breadcrumb inside nav (giftee-exact: no separate hero) -->
+    <div class="sub-top-nav__body">
+      <h1 class="sub-top-nav__h1">職種紹介</h1>
+      <span class="sub-top-nav__line"></span>
+      <nav class="sub-top-nav__bread" aria-label="パンくず">
+        <ol class="sub-top-nav__bread-list">
+          <li><a href="index.html">トップ</a></li>
+          <li>職種紹介</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===== HERO INTRO (desc left + photo right) ===== -->
+    <section class="jobs-pg-hero">
+      <div class="jobs-pg-hero__inner">
+        <p class="jobs-pg-hero__desc">伏見管理サービスの職種について紹介します。</p>
+        <div class="jobs-pg-hero__photo">
+          <img src="img/front-worker.jpg" alt="業務風景" width="607" height="304">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== JOB CARDS (3col grid, giftee-exact) ===== -->
+    <section class="jobs-pg-cards">
+      <div class="jobs-pg-cards__inner">
+        <p class="jobs-pg-cards__filter">職種を探す <span class="jobs-pg-cards__filter-count">3</span></p>
+
+        <div class="jobs-pg-grid">
+
+          <!-- Card 1: フロント -->
+          <a href="jobs/front.html" class="jobs-pg-card">
+            <div class="jobs-pg-card__head">
+              <h3>フロント</h3>
+              <span class="jobs-pg-card__arrow">→</span>
+            </div>
+            <p class="jobs-pg-card__desc">マンション管理組合の窓口として、日常の管理運営をトータルにサポート。総会・理事会の運営支援から修繕対応まで幅広く担当します。</p>
+            <div class="jobs-pg-card__tags">
+              <span class="jobs-pg-card__tag">管理組合対応</span>
+              <span class="jobs-pg-card__tag">総会・理事会</span>
+              <span class="jobs-pg-card__tag">修繕対応</span>
+              <span class="jobs-pg-card__tag">会計管理</span>
+            </div>
+          </a>
+
+          <!-- Card 2: 工事・修繕 -->
+          <a href="jobs/construction.html" class="jobs-pg-card">
+            <div class="jobs-pg-card__head">
+              <h3>工事・修繕</h3>
+              <span class="jobs-pg-card__arrow">→</span>
+            </div>
+            <p class="jobs-pg-card__desc">大規模修繕工事の計画から完了まで、プロジェクト全体を管理。建物診断・修繕提案・施工管理を通じてマンションの資産価値を守ります。</p>
+            <div class="jobs-pg-card__tags">
+              <span class="jobs-pg-card__tag">大規模修繕</span>
+              <span class="jobs-pg-card__tag">建物診断</span>
+              <span class="jobs-pg-card__tag">施工管理</span>
+              <span class="jobs-pg-card__tag">品質管理</span>
+            </div>
+          </a>
+
+          <!-- Card 3: 総務・管理 -->
+          <a href="jobs/admin.html" class="jobs-pg-card">
+            <div class="jobs-pg-card__head">
+              <h3>総務・管理</h3>
+              <span class="jobs-pg-card__arrow">→</span>
+            </div>
+            <p class="jobs-pg-card__desc">経理・人事・総務・IT支援など、会社全体のバックオフィス業務を担当。社員が安心して働ける環境をつくる縁の下の力持ちです。</p>
+            <div class="jobs-pg-card__tags">
+              <span class="jobs-pg-card__tag">経理</span>
+              <span class="jobs-pg-card__tag">人事</span>
+              <span class="jobs-pg-card__tag">総務</span>
+              <span class="jobs-pg-card__tag">IT</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ (same style as TOP) ===== -->
+    <section class="sec sec--faq">
+      <div class="faq-header anim-up anim-up--title">
+        <h2 class="faq-page-title">よくあるご質問</h2>
+      </div>
+
+      <!-- Category 1: 選考について -->
+      <div class="faq-category">
+        <div class="faq-category__label anim-up"><span>選考について</span></div>
+        <div class="faq-category__items">
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>選考プロセスを教えてください</span><span class="faq-icon"></span></button><div class="faq-a"><p>書類選考 → 面接（1〜2回）→ 内定のフローです。面接は対面またはオンラインで実施します。応募から内定まで2〜4週間程度です。</p></div></div>
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>未経験でも応募できますか？</span><span class="faq-icon"></span></button><div class="faq-a"><p>はい、フロント職は未経験歓迎です。入社後の研修制度やOJTが充実しており、先輩社員がしっかりサポートします。工事・修繕担当は建設業界での経験があると活かせます。</p></div></div>
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>必要な資格はありますか？</span><span class="faq-icon"></span></button><div class="faq-a"><p>応募時点で必須の資格はありません。管理業務主任者やマンション管理士などの資格は入社後に取得を支援しており、取得後は資格手当（月最大5.9万円）が支給されます。</p></div></div>
+        </div>
+      </div>
+
+      <!-- Category 2: 働き方について -->
+      <div class="faq-category">
+        <div class="faq-category__label anim-up"><span>働き方について</span></div>
+        <div class="faq-category__items">
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>残業はどのくらいですか？</span><span class="faq-icon"></span></button><div class="faq-a"><p>全社平均で月3.4時間です。業務効率化とチーム制により、残業を最小限に抑えています。</p></div></div>
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>テレワークは可能ですか？</span><span class="faq-icon"></span></button><div class="faq-a"><p>一部業務でテレワークを導入しています。ただし管理組合との対面対応が基本のため、出社が中心となります。</p></div></div>
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>転勤はありますか？</span><span class="faq-icon"></span></button><div class="faq-a"><p>基本的に転居を伴う転勤はありません。東京・神奈川・埼玉エリアの11拠点内での異動の可能性はあります。</p></div></div>
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>休日出勤はありますか？</span><span class="faq-icon"></span></button><div class="faq-a"><p>フロント職は管理組合の総会・理事会が土日に開催されることがあるため、月1〜2回程度の休日出勤があります。その場合は振替休日を取得できます。</p></div></div>
+        </div>
+      </div>
+
+      <!-- Category 3: 福利厚生について -->
+      <div class="faq-category">
+        <div class="faq-category__label anim-up"><span>福利厚生について</span></div>
+        <div class="faq-category__items">
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>資格手当の詳細を教えてください</span><span class="faq-icon"></span></button><div class="faq-a"><p>管理業務主任者：月1万円、マンション管理士：月1万円、宅地建物取引士：月1万円など、複数資格の手当を合算して最大月5.9万円が支給されます。</p></div></div>
+          <div class="faq-item anim-up"><button class="faq-q" aria-expanded="false"><span>育児休業の取得実績はありますか？</span><span class="faq-icon"></span></button><div class="faq-a"><p>育休取得率・復帰率ともに100%です。男性社員の取得実績もあります。時短勤務制度も利用可能です。</p></div></div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="gft-footer">
+    <div class="gft-footer__main">
+      <div class="gft-footer__logo">
+        <a href="index.html" class="hero-logo">
+          <span class="hero-logo__main">伏見管理サービス</span>
+          <span class="hero-logo__sub">Careers</span>
+        </a>
+      </div>
+      <nav class="gft-footer__nav">
+        <a href="about.html">会社について</a>
+        <a href="culture.html">カルチャー</a>
+        <a href="workstyle.html">働く環境</a>
+        <a href="jobs.html">職種紹介</a>
+        <a href="index.html#faq">よくあるご質問</a>
+      </nav>
+      <div class="gft-footer__ext">
+        <a href="https://www.fushimikanri.co.jp/" target="_blank" rel="noopener">
+          コーポレートサイト <span class="gft-footer__ext-icon">↗</span>
+        </a>
+        <a href="https://iida-group-hd.co.jp/" target="_blank" rel="noopener">
+          飯田グループHD <span class="gft-footer__ext-icon">↗</span>
+        </a>
+      </div>
+      <div class="gft-footer__cta">
+        <a href="positions.html" class="gft-footer__btn gft-footer__btn--filled">
+          <span>募集職種</span>
+          <span class="gft-footer__btn-arrow">→</span>
+        </a>
+        <a href="newgrads.html" class="gft-footer__btn gft-footer__btn--outlined">
+          <span>新卒採用</span>
+          <span class="gft-footer__btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+    <div class="gft-footer__sub">
+      <div class="gft-footer__policies">
+        <a href="privacy.html">プライバシーポリシー</a>
+      </div>
+      <div class="gft-footer__copy"><a href="https://www.tiktok.com/@itazura_diary?is_from_webapp=1&amp;sender_device=pc" target="_blank" rel="noopener" class="gft-footer__social" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.88-2.88 2.89 2.89 0 0 1 2.88-2.88c.28 0 .56.04.82.1v-3.5a6.37 6.37 0 0 0-.82-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V9.4a8.16 8.16 0 0 0 3.76.92V6.86a4.83 4.83 0 0 1-0.01-.17z"/></svg></a><span>&copy; 伏見管理サービス株式会社</span></div>
+    </div>
+  </footer>
+  </div><!-- /#swup -->
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
+  <script src="js/bg-three.js"></script>
+  <script src="https://unpkg.com/swup@4/dist/Swup.umd.js"></script>
+  <script src="js/swup-init.js"></script>
+</body>
+</html>

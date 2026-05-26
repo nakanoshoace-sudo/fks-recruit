@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="#2A5C52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Handshake / Trust -->
+  <path d="M30 120 L60 90 L80 100 L100 80 L120 100 L140 90 L170 120"/>
+  <!-- Two hands meeting -->
+  <path d="M50 130 C50 130 70 115 90 125 C100 130 100 140 90 145 C80 150 70 145 65 140"/>
+  <path d="M150 130 C150 130 130 115 110 125 C100 130 100 140 110 145 C120 150 130 145 135 140"/>
+  <!-- Balance scale above -->
+  <line x1="100" y1="35" x2="100" y2="65"/>
+  <line x1="65" y1="50" x2="135" y2="50"/>
+  <path d="M65 50 L55 70 H75 Z" stroke-width="1.2"/>
+  <path d="M135 50 L125 70 H145 Z" stroke-width="1.2"/>
+  <!-- Circle of trust -->
+  <circle cx="100" cy="100" r="75" stroke-width="0.8" opacity="0.3"/>
+</svg>

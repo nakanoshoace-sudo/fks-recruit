@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="#2A5C52" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- House outline -->
+  <path d="M100 30 L170 80 V170 H30 V80 Z"/>
+  <rect x="75" y="120" width="50" height="50"/>
+  <!-- Heart wrapping house and people -->
+  <path d="M100 180 C50 140 20 110 20 80 C20 55 40 40 60 40 C75 40 88 50 100 65 C112 50 125 40 140 40 C160 40 180 55 180 80 C180 110 150 140 100 180Z" stroke-width="1.2" opacity="0.6"/>
+  <!-- Small person left -->
+  <circle cx="70" cy="100" r="6"/>
+  <path d="M70 106 V125 M62 112 H78"/>
+  <!-- Small person right -->
+  <circle cx="130" cy="100" r="6"/>
+  <path d="M130 106 V125 M122 112 H138"/>
+</svg>
