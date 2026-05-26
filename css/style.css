@@ -1028,7 +1028,7 @@ small{font-size:.55em;font-weight:400}
   grid-column:1;
   border-radius:clamp(8px,0.7vw,13px);
   overflow:hidden;
-  background:transparent;
+  background:#fff;
   border:2.5px solid rgba(26,26,26,.35);
   aspect-ratio:1/1;
   align-self:stretch;
