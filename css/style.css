@@ -909,7 +909,7 @@ small{font-size:.55em;font-weight:400}
   flex-direction:column;
   gap:clamp(16px,2vw,28px);
   padding:clamp(28px,2.78vw,53px);       /* giftee: 53.33px */
-  border:1.5px solid rgba(26,26,26,.25);
+  border:2.5px solid rgba(26,26,26,.35);
   border-radius:clamp(8px,0.7vw,13px);  /* giftee: 13.33px */
   background:transparent;
   text-decoration:none;
@@ -1029,7 +1029,7 @@ small{font-size:.55em;font-weight:400}
   border-radius:clamp(8px,0.7vw,13px);
   overflow:hidden;
   background:transparent;
-  border:1.5px solid rgba(26,26,26,.25);
+  border:2.5px solid rgba(26,26,26,.35);
   aspect-ratio:1/1;
   align-self:stretch;
   max-width:320px;
@@ -2480,7 +2480,7 @@ img[loading="lazy"].img-loaded{
 .wsp-office__inner{padding:0 clamp(20px,2.8vw,53px);display:flex;flex-direction:column;gap:clamp(40px,4.2vw,80px)}
 .wsp-office__h2{font-family:var(--ff-head);font-size:clamp(32px,2.5vw,48px);font-weight:600;color:var(--c-dark)}
 .wsp-slider{position:relative;overflow:clip visible}
-.wsp-slider__track{display:grid;grid-template-columns:1fr 1fr;animation:wspSlide 20s linear infinite;will-change:transform}
+.wsp-slider__track{display:grid;grid-template-columns:1fr 1fr;animation:wspSlide 10s linear infinite;will-change:transform}
 @keyframes wspSlide{0%{transform:translateZ(0)}100%{transform:translate3d(-50%,0,0)}}
 .wsp-slider__track:hover{animation-play-state:paused}
 .wsp-slider__items{display:flex;align-items:center;gap:clamp(16px,1.4vw,27px)}
