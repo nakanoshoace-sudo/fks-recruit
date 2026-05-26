@@ -1550,7 +1550,8 @@ small{font-size:.55em;font-weight:400}
   overflow:hidden;
   border-radius:clamp(6px,.7vw,13.3px);
   margin-left:clamp(14px,1.4vw,27px);
-  background:#f8faf9;
+  background:#fff;
+  border:2.5px solid rgba(26,26,26,.35);
   display:flex;
   align-items:center;
   justify-content:center;
