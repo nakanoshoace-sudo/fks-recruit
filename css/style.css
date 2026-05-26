@@ -1017,7 +1017,7 @@ small{font-size:.55em;font-weight:400}
 .ws-grid{
   position:relative;z-index:1;
   display:grid;
-  grid-template-columns:auto 1fr;
+  grid-template-columns:clamp(240px,22vw,420px) 1fr;
   grid-template-rows:repeat(3, auto);
   gap:clamp(40px,4vw,80px) clamp(48px,5vw,96px);
   padding:0 2.8vw;
@@ -1031,8 +1031,7 @@ small{font-size:.55em;font-weight:400}
   background:#fff;
   border:2.5px solid rgba(26,26,26,.35);
   aspect-ratio:1/1;
-  align-self:stretch;
-  max-width:320px;
+  align-self:center;
 }
 .ws-grid__img img{
   width:100%;height:100%;object-fit:contain;display:block;padding:10%;
