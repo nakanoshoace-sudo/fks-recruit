@@ -17,12 +17,12 @@
   const urlCircle = new URLSearchParams(window.location.search).get('circle');
   const FORE_COLOR = urlCircle
     ? [parseInt(urlCircle.slice(0,2),16)/255, parseInt(urlCircle.slice(2,4),16)/255, parseInt(urlCircle.slice(4,6),16)/255]
-    : [59/255, 199/255, 129/255];   // #3BC781 default
+    : [238/255, 232/255, 170/255];   // #EEE8AA (palegoldenrod) default
 
   const ITEMS = [
     { x: 0.02, y: 0.083, size: 0.80, opacity: 1,   lensWeight: 1,    grad: 0 },  // A — main circle (giftee exact)
     { x: 0.00, y: 0.00,  size: 0.00, opacity: 0,   lensWeight: 0,    grad: 0 },  // B — disabled (giftee exact)
-    { x: 0.22, y: 1.45,  size: 0.94, opacity: 1,   lensWeight: 0.25, grad: 1 },  // C — lower circle (giftee exact)
+    { x: 0.22, y: 1.45,  size: 0.94, opacity: 1,   lensWeight: 0.25, grad: 0 },  // C — lower circle (no gradient)
     { x: 0.00, y: 0.00,  size: 0.00, opacity: 0,   lensWeight: 0,    grad: 0 },  // White — disabled
   ];
 
