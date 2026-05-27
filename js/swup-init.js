@@ -279,7 +279,7 @@
         noiseTextClip(noiseTargets, {
           width: 40, height: 40,
           durationMs: 400, delayMs: 1500,
-          startHex: '#ffffff', endHex: '#2A5C52',
+          startHex: '#ffffff', endHex: '#556b2f',
         });
       }
     }

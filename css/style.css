@@ -349,7 +349,7 @@ small{font-size:.55em;font-weight:400}
   letter-spacing:1.7px;color:var(--c-black);
   margin-bottom:clamp(24px,4vh,52px);  /* giftee: ~53px gap between lead and desc */
 }
-.hero-lead__accent{color:var(--c-primary-dd)}
+.hero-lead__accent{color:#556b2f}
 .hero-desc{max-width:27.6vw}
 .hero-desc p{
   font-family:var(--ff-head);

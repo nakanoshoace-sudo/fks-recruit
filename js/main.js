@@ -278,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
       durationMs: 400,
       delayMs: 1500,
       startHex: '#ffffff',
-      endHex: '#2A5C52',
+      endHex: '#556b2f',
     });
   }
 
