@@ -3224,11 +3224,12 @@ html.is-animating body {
 
 /* ── Filter label ── */
 .jobs-pg-cards{
-  padding:0 53px; /* symmetric padding, same as TOP */
+  padding:0 2.8vw; /* same as TOP .jobs-cards */
 }
 .jobs-pg-cards__inner{
-  max-width:1798px; /* match TOP card width: 564×3 + 53×2 */
-  padding-bottom:160px; /* space before FAQ section */
+  max-width:var(--wrap);
+  margin:0 auto;
+  padding-bottom:160px;
 }
 .jobs-pg-cards__filter{
   display:flex;
@@ -3252,54 +3253,51 @@ html.is-animating body {
   font-weight:600;
 }
 
-/* ── Card grid (3col, giftee-exact) ── */
+/* ── Card grid (3col, matches TOP .jobs-cards exactly) ── */
 .jobs-pg-grid{
   display:grid;
-  grid-template-columns:repeat(3,1fr); /* giftee: 475px × 3 */
-  gap:53px; /* giftee: 53.33px */
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(24px,2.78vw,53px);          /* same as TOP */
 }
 
-/* ── Individual card ── */
+/* ── Individual card (mirrors TOP .jobs-card pixel-for-pixel) ── */
 .jobs-pg-card{
   display:flex;
   flex-direction:column;
-  gap:27px; /* giftee: 26.67px */
-  padding:53px; /* giftee: 53.33px */
-  background:rgba(255,255,255,.4);
-  border-radius:13.3px;
+  gap:clamp(16px,2vw,28px);
+  padding:clamp(28px,2.78vw,53px);
+  border:2.5px solid rgba(26,26,26,.35);
+  border-radius:clamp(8px,0.7vw,13px);
+  background:transparent;
   text-decoration:none;
   color:var(--c-dark);
   position:relative;
-  transition:background .3s var(--ease);
+  transition:border-color .4s var(--ease), background .4s var(--ease);
 }
-/* ::after border overlay (giftee hover pattern) */
-.jobs-pg-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  border:1px solid rgba(0,0,0,.08);
-  border-radius:13.3px;
-  pointer-events:none;
-  transition:opacity .4s var(--ease);
+.jobs-pg-card:hover{
+  border-color:var(--c-primary);
+  background:rgba(255,255,255,.5);
 }
-.jobs-pg-card:hover::after{opacity:0}
+/* ::after border overlay — removed (using real border like TOP) */
+.jobs-pg-card::after{display:none}
 
 /* Card head: title + arrow */
 .jobs-pg-card__head{
   display:flex;
   align-items:center;
-  gap:13px; /* giftee: 13.33px */
+  gap:12px;
 }
 .jobs-pg-card__head h3{
   font-family:var(--ff-head);
-  font-size:27px; /* giftee: 26.67px */
+  font-size:clamp(16px,1.39vw,27px);
   font-weight:600;
-  line-height:1.7;
+  line-height:1.4;
 }
 .jobs-pg-card__arrow{
-  font-size:21px;
-  color:var(--c-primary-dd);
-  transition:transform .4s var(--ease);
+  font-family:var(--ff-en);
+  font-size:clamp(14px,1.2vw,22px);
+  color:var(--c-accent);
+  transition:transform .35s var(--ease);
 }
 .jobs-pg-card:hover .jobs-pg-card__arrow{
   transform:translateX(4px);
@@ -3307,30 +3305,33 @@ html.is-animating body {
 
 /* Card description */
 .jobs-pg-card__desc{
-  font-size:19px; /* giftee: 18.67px */
-  line-height:1.85; /* giftee: 34.53/18.67 ≈ 1.85 */
-  color:var(--c-dark);
+  font-family:var(--ff);
+  font-size:clamp(12px,0.97vw,19px);
+  font-weight:400;
+  line-height:1.85;
+  letter-spacing:.5px;
+  color:var(--c-gray);
 }
 
 /* Card tags */
 .jobs-pg-card__tags{
   display:flex;
   flex-wrap:wrap;
-  gap:7px; /* giftee: 6.67px */
+  gap:clamp(6px,0.5vw,10px);
   margin-top:auto;
 }
 .jobs-pg-card__tag{
   display:inline-flex;
   align-items:center;
-  justify-content:center;
-  padding:0 13px;
-  height:40px; /* giftee: 40px */
-  font-size:13px; /* giftee: 13.33px */
-  border:1px solid rgba(0,0,0,.15);
-  border-radius:7px; /* giftee: 6.67px */
+  height:clamp(28px,2.08vw,40px);
+  padding:0 clamp(8px,0.7vw,13px);
+  border-radius:999px;
+  border:1px solid rgba(0,0,0,.12);
+  font-size:clamp(11px,0.83vw,16px);
+  font-weight:500;
+  color:var(--c-dark);
   white-space:nowrap;
 }
-
 /* ── FAQ section (giftee-exact: 2col layout) ── */
 .jobs-pg-faq{
   background:rgba(255,255,255,.4);
