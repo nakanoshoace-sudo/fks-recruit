@@ -220,7 +220,7 @@
       float fOpD = u_opacityD * maskD;
 
       // Rendering — sharp edges, no lens blur
-      float edgeSharp = 0.005;
+      float edgeSharp = 0.001;
       float alpha1 = 1.0 - smoothstep(-edgeSharp, edgeSharp, sdf1);
       float fa1 = alpha1 * wA;
 
